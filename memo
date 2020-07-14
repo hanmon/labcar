@@ -1,0 +1,11 @@
+#To drive and train by joystick
+python3 sample_manage.py drive --js
+
+#To drive by AI
+#no obstacle
+python manage.py drive --model models/rnn_g202_clockwise.h5 --type rnn
+
+#with obstacle
+python manage.py drive --model models/rnn_g202_clockwise_object.h5 --type rnn
+
+
